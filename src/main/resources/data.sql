@@ -18,6 +18,8 @@ INSERT INTO menu(id_menu, nombre, icono, url) VALUES (6, 'Médicos', 'healing', 
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (7, 'Examenes', 'assignment', '/examen');
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (8, 'Pacientes', 'accessibility', '/paciente');
 INSERT INTO menu(id_menu, nombre, icono, url) VALUES (9, 'Reportes', 'assessment', '/reporte');
+INSERT INTO menu(id_menu, nombre, icono, url) VALUES (10, 'Signos', 'healing', '/signos');
+
 
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (1, 1);
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (2, 1);
@@ -28,6 +30,7 @@ INSERT INTO menu_rol (id_menu, id_rol) VALUES (6, 1);
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (7, 1);
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (8, 1);
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (9, 1);
+INSERT INTO menu_rol (id_menu, id_rol) VALUES (10, 1);
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (3, 2);
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (4, 2);
 INSERT INTO menu_rol (id_menu, id_rol) VALUES (5, 2);
@@ -100,4 +103,6 @@ INSERT INTO paciente(nombres, apellidos, dni, email, telefono) VALUES('GUSTAVO',
 INSERT INTO paciente(nombres, apellidos, dni, email, telefono) VALUES('DELIA', 'RUIZ', '72301382' , 'carlos@gmail.com', '991855573');
 INSERT INTO paciente(nombres, apellidos, dni, email, telefono) VALUES('DEWI', 'RUIZ', '72301383' , 'carlos@gmail.com', '991855574');
 INSERT INTO paciente(nombres, apellidos, dni, email, telefono) VALUES('KUN', 'RUIZ', '72301384' , 'carlos@gmail.com', '991855575');
+
+INSERT INTO signos(fecha,temperatura,pulso,ritmo_respiratorio,id_paciente) VALUES ('2019-11-23 23:36:37.958',27,123,23,1);
 
