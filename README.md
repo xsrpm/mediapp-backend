@@ -13,11 +13,8 @@ Backend con Spring para un modulo de consultas médicas.
 ## Empaquetar fuente en .jar
 mvn clean package -Dmaven.test.skip=true
 
-## Ejecutar empaquetado
-java -jar target/*.jar
-
-## Despliege de Prueba
-https://repl.it/@cemp2703/mediapp-backend
+## Ejecutar empaquetado (variables de entorno ejemplo)
+java -jar -Dhost=ziggy.db.elephantsql.com -Dport=5432 -Ddatabase=gbnqyety -Dusername=gbnqyety -Dpassword=EQ4MxaDHe6lzjpspoygflP7-L1T4FQf2 target/*.jar
 
 # Consideraciones
 Para acceder a las apis se necesita de autenticación. Se adjunta capturas para obtener un token válido y añadirlo a la cabecera de los recursos a consultar.
@@ -39,4 +36,5 @@ https://repl.it/@cemp2703/registroventa-backend
 
 ## Rutas de swagger
 /v2/api-docs
+
 /swagger-ui.html
